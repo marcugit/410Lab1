@@ -28,10 +28,10 @@ if __name__=="__main__":
 	print("Math mark 100")
 	student.addCourseMark("English", 80)
 	print("English mark 80")
-	average = student.average()
-	print("Marks average: " + str(average))
+	print("Marks average: " + str(student.average()))
 
 
+#IGNORE
 #def do_stuff_with_number(n, list1):
 	
 #	print(list[n])
