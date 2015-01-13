@@ -1,7 +1,9 @@
 class Student:
 	courseMarks={}
 	name=""
+	family = ""
 	def __init__(self, name, family):
+		self.courseMarks={}
 		self.name=name
 		self.family=family
 
@@ -11,9 +13,9 @@ class Student:
 
 	def average(self):
 		total = 0
-		for course, mark in courseMarks.items():
+		for course, mark in self.courseMarks.items():
 			total += mark
-		total=total/courseMarks.lengh()
+		total=total/len(self.courseMarks)
 		return total
 
 
@@ -25,8 +27,9 @@ if __name__=="__main__":
 	student.addCourseMark("Math", 100)
 	print("Math mark 100")
 	student.addCourseMark("English", 80)
-	print ("English mark 80")
-	print("Marks average: %s ", student.average())
+	print("English mark 80")
+	average = student.average()
+	print("Marks average: " + str(average))
 
 
 #def do_stuff_with_number(n, list1):

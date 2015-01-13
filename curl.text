@@ -1,0 +1,73 @@
+curl http://google.com
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="http://www.google.ca/?gfe_rd=cr&amp;ei=xUu1VPavAeuV8Qet8YGgAg">here</A>.
+</BODY></HTML>
+
+
+curl -request GET 'http://simplebits.com'
+
+see the 'output' file for result
+
+curl -X PUT -H 'Content-Type:application/json' -d'{"firstName":"Ana", "lastName":"Marcu"}' echo.httpkit.com
+
+{
+  "method": "PUT",
+  "uri": "/",
+  "path": {
+    "name": "/",
+    "query": "",
+    "params": {}
+  },
+  "headers": {
+    "x-forwarded-for": "129.128.41.32",
+    "host": "echo.httpkit.com",
+    "user-agent": "curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3",
+    "accept": "*/*",
+    "content-type": "application/json",
+    "content-length": "39"
+  },
+  "body": "{\"firstName\":\"Ana\", \"lastName\":\"Marcu\"}",
+  "ip": "127.0.0.1",
+  "powered-by": "http://httpkit.com",
+  "docs": "http://httpkit.com/echo"
+}
+
+
+curl --request POST 'http://www.somedomain.com/'
+
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.7.6</center>
+</body>
+</html>
+
+curl --request DELETE 'http://www.somedomain.com/'
+
+
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.7.6</center>
+</body>
+</html>
+
+curl --help
+
+Usage: curl [options...] <url>
+Options: (H) means HTTP/HTTPS only, (F) means FTP only
+     --anyauth       Pick "any" authentication method (H)
+ -a, --append        Append to target file when uploading (F/SFTP)
+     --basic         Use HTTP Basic Authentication (H)
+     --cacert FILE   CA certificate to verify peer against (SSL)
+     --capath DIR    CA directory to verify peer against (SSL)
+ -E, --cert CERT[:PASSWD] Client certificate file and password (SSL)
+     --cert-type TYPE Certificate file type (DER/PEM/ENG) (SSL)
+     --ciphers LIST  SSL ciphers to use (SSL)
+     --compressed    Request compressed response (using deflate or gzip)   etc...
